@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -14,7 +18,43 @@
                 <p>ELECTRICA</p>
             </div>
         </div>
-        <div class="right-side"></div>
+        <div class="right-side">
+            <div class="disclaimer-container">
+                <div class="disclaimer-text">
+                    This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br> Sign up <em>now</em> to get started.
+                </div>
+                <div class="disclaimer-text-2">
+                    You <em>know</em> you want to
+                </div>                
+            </div>
+            <div class="form-container">
+                <div class="form-heading">Let's do this!</div>
+                <form action="">
+                    <label for="firstname">FIRST NAME</label>
+                    <label for="lastname">LAST NAME</label>                    
+                    <input type="text" id="firstname" required>
+                    <input type="text" id="lastname" required>
+                    <label for="email">EMAIL</label>
+                    <label for="phone">PHONE NUMBER</label>
+                    <input type="email" name="email" id="email" required>
+                    <input type="tel" name="phone" id="phone">
+                    <label for="password">PASSWORD</label>
+                    <label for="confirmpassword">CONFIRM PASSWORD</label>                    
+                    <input type="password" name="password" id="password" required>
+                    <input type="password" id="confirmpassword" required>
+                    <div class="password-error-text"></div>
+                    <div class="confirm-password-error-text"></div>
+                </form>
+            </div>
+            <div class="submit-container">
+                <div class="submit-button-wrapper">
+                    <button type="submit" id="submit-button">Create Account</button>
+                </div>
+                <div class="login-text">
+                    Already have an account? <span><a href="">Log In</a></span>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
